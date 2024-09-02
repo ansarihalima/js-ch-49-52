@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- ..................QUESTION 1........................ -->
+    <div class="form-container">
+        <h1>Signup Form</h1>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+<!-- ...................QUESTION 2....................... -->
+
+<div class="item">
+    <h2>Item Title</h2>
+    <img src="./asstes/mbl1.jfif">
+    <p class="item-summary">The iPhone 12 features a sleek design with a 6.1-inch Super Retina XDR display. Click the button below to read more about its specifications and features.</p>
+    <div class="item-details">
+        <p>The iPhone 12 is equipped with Apple's A14 Bionic chip, providing fast performance and efficiency. It has a dual-camera system with 12MP ultra-wide and wide lenses, offering high-quality photos and videos. The device supports 5G connectivity for faster internet speeds and has a Ceramic Shield front cover for improved durability. With its sleek, flat-edged design and vibrant color options, the iPhone 12 offers a modern and stylish look. The phone is available in various storage capacities and comes with iOS, Apple's latest operating system, providing a smooth user experience with access to a wide range of apps and features.</p>
+    </div>
+    <button class="read-more-btn">Read More</button>
+</div>
+
+<!-- .............QUESTION 3........................ -->
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="student-table-body">
+    </tbody>
+</table>
+<div id="edit-form">
+    <h3>Edit Student</h3>
+    <form id="form">
+        <input type="hidden" id="edit-id">
+        <label for="edit-name">Name:</label>
+        <input type="text" id="edit-name" required><br>
+        <label for="edit-age">Age:</label>
+        <input type="number" id="edit-age" required><br>
+        <label for="edit-grade">Grade:</label>
+        <input type="text" id="edit-grade" required><br>
+        <button type="submit">Save</button>
+        <button type="button" id="cancel-edit">Cancel</button>
+    </form>
+</div>
+    <script src="./index.js"></script>
+</body>
+</html>
